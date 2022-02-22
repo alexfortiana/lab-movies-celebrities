@@ -86,7 +86,7 @@ router.post("/:id/edit", (req, res, next) =>{
         title, genre, plot, cast
     })
     .then((updateMovie) =>{
-        res.redirect(`/movies/${updateMovie._id}/edit`)
+        res.redirect(`/movies/${updateMovie._id}`)
 
     })
     .catch((err)=>{
@@ -98,4 +98,9 @@ router.post("/:id/edit", (req, res, next) =>{
 
 // all your routes here
 
+
+
+
 module.exports = router;
+
+
