@@ -1,17 +1,20 @@
 <h2>Create your celebrity!</h2>
 
 <form action="/celebrities/create" method="POST">
- 
-<label for="name">Name</label>
-<input type="text" value="" name="name">
+    <div class="mb-3">
+        <label for="name">Name</label>
+        <input type="text" value="" name="name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="occupation">Occupation</label>
+        <input type="text" value="" name="occupation" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="catchPhrase">Catch Phrase</label>
+        <input type="text" value="" name="catchPhrase" class="form-control">
+    </div>
 
-<label for="occupation">Occupation</label>
-<input type="text" value="" name="occupation">
-
-<label for="catchPhrase">Catch Phrase</label>
-<input type="text" value="" name="catchPhrase">
-
- <button>Add celebrity</button>
+    <button class="btn btn-primary">Add celebrity</button>
 
 
 

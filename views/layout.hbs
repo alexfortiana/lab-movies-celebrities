@@ -11,6 +11,22 @@
   </head>
 
   <body>
+<nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+    <li><a href='/'>Home</a></li>
+    <li><a class='dropdown-arrow' href="/celebrities">All celebrities</a>
+      <ul class='sub-menus'>
+        <li><a href="/celebrities/create">Create your celebrity</a></li>
+      </ul>
+    </li>
+    <li><a class='dropdown-arrow' href="/movies">All movies</a>
+      <ul class='sub-menus'>
+        <li><a href="/movies/create">Create your movie!</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     <div class="container">
       {{{body}}}
     </div>
