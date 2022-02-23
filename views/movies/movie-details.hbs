@@ -1,14 +1,16 @@
 <h2>Details movie</h2>
 
-<h4>{{oneMovie.title}}</h4>
-<h6>{{oneMovie.genre}}</h6>
-<p>{{oneMovie.plot}}</p>
+<h4>Title:</h4>{{oneMovie.title}}
+<h4>Genre:</h4>{{oneMovie.genre}}
+<h4>Plot:</h4>{{oneMovie.plot}}<br><br>
+<div>
+    {{#each oneMovie.cast}}
+    <h5>Cast:</h5>
+    <p><b>Name:</b>{{this.name}}</p>
+    <p><b>Ocuppation:</b>{{this.occupation}}</p>
+    <p><b>Catch phrase:</b>{{this.catchPhrase}}</p>
+    {{/each}}
+</div>
 
-{{#each oneMovie.cast}}
-<h5>{{this.name}}</h5>
-<p>{{this.occupation}}</p>
-<p>{{this.catchPhrase}}</p>
-{{/each}}
-
-<form method="POST" action="/movies/{{oneMovie._id}}/delete"><button>Delete</button></form>
-<form method="GET" action="/movies/{{oneMovie._id}}/edit"><button>edit</button></form>
+<form method="POST" action="/movies/{{oneMovie._id}}/delete"><button class="testbutton">Delete</button></form>
+<form method="GET" action="/movies/{{oneMovie._id}}/edit"><button class="testbutton">edit</button></form>
